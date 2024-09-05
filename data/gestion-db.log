@@ -1,0 +1,8 @@
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+alter table Proyecto add column estado varchar(255)
+alter table Tarea add column estado varchar(255)
+DELETE FROM PROYECTO WHERE ID=1
+INSERT INTO PROYECTO VALUES(1,'Se creara una pagina web para la compra en linea de los productos de la panaderia.','2024-09-30 00:00:00.000000','2024-09-06 00:00:00.000000','Creacion de pagina web para panaderia La Miga',NULL,'4028e4b091c277c50191c27a4e6b0000','4028e4b091c264d30191c2656f190000','EN_MANTENIMIENTO')
+COMMIT
